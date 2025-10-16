@@ -37,19 +37,29 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: null,
-          style: ButtonStyle(
-            backgroundColor: WidgetStateProperty.all(Colors.blue),
-            foregroundColor: WidgetStateProperty.all(Colors.white),
-            elevation: WidgetStateProperty.all(2),
-            shape: WidgetStateProperty.all(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Захарченко Вероника Алексеевна\nИКБО-06-22\n22И1136',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 20, color: Colors.blue),
             ),
-          ),
-          child: Text('Нажми меня'),
+            ElevatedButton(
+              onPressed: null,
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all(Colors.blue),
+                foregroundColor: WidgetStateProperty.all(Colors.white),
+                elevation: WidgetStateProperty.all(2),
+                shape: WidgetStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
+              child: Text('Нажми меня'),
+            ),
+          ],
         ),
       ),
     );
