@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Text(
           'Захарченко Вероника Алексеевна\nИКБО-06-22\n22И1136',
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 20),
+          style: TextStyle(fontSize: 20, color: Colors.blue),
         ),
       ),
     );
