@@ -40,8 +40,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: EdgeInsets.only(right: 100),
+            Container(
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.only(right: 100),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20)
+              ),
               child: Text(
                 'Захарченко Вероника Алексеевна\nИКБО-06-22\n22И1136',
                 textAlign: TextAlign.center,
