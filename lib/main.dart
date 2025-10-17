@@ -40,12 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Захарченко Вероника Алексеевна\nИКБО-06-22\n22И1136',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, color: Colors.blue),
+            Padding(
+              padding: EdgeInsets.only(right: 100),
+              child: Text(
+                'Захарченко Вероника Алексеевна\nИКБО-06-22\n22И1136',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 20, color: Colors.blue),
+              ),
             ),
-            SizedBox(width: 100, height: 0),
             ElevatedButton(
               onPressed: null,
               style: ButtonStyle(
